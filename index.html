@@ -280,5 +280,24 @@
       </div>
     </div>
   </div>
+
+  <!-- Dynamically adjust scale for print -->
+  <script>
+    function adjustScaleForPrint() {
+      // Approximate A4 page height in pixels at 96dpi (adjust if needed)
+      const a4Height = 1122;
+      const container = document.querySelector('.container');
+      const containerHeight = container.offsetHeight;
+      
+      if (containerHeight > a4Height) {
+        const scaleFactor = a4Height / containerHeight;
+        container.style.transform = 'scale(' + scaleFactor + ')';
+        container.style.transformOrigin = 'top left';
+      } else {
+        container.style.transform = 'none';
+      }
+    }
+    window.onbeforeprint = adjustScaleForPrint;
+  </script>
 </body>
 </html>
