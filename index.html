@@ -1,1 +1,234 @@
-test for webpage
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Yi-Chieh Chen - CV</title>
+  <style>
+    /* Basic reset and styling */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 20px;
+      line-height: 1.6;
+      color: #333;
+    }
+    .container {
+      max-width: 800px;
+      margin: auto;
+      background: #fff;
+      padding: 30px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    /* Header styling */
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 30px;
+    }
+    .header h1 {
+      margin: 0;
+      font-size: 2em;
+    }
+    .header .contact {
+      font-size: 0.9em;
+    }
+    .header a {
+      color: #333;
+      text-decoration: none;
+    }
+    /* Section titles */
+    .section {
+      margin-bottom: 30px;
+    }
+    .section-title {
+      font-size: 1.2em;
+      margin-bottom: 10px;
+      padding-bottom: 5px;
+      border-bottom: 2px solid #333;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    /* Subheading for entries (Work Experience, Education) */
+    .item {
+      margin-bottom: 20px;
+    }
+    .subheading {
+      display: flex;
+      justify-content: space-between;
+      font-weight: bold;
+    }
+    .subheading .location,
+    .subheading .dates {
+      font-weight: normal;
+      font-style: italic;
+      color: #555;
+      font-size: 0.9em;
+    }
+    .details {
+      margin: 5px 0 10px 0;
+      font-style: italic;
+      color: #555;
+      font-size: 0.9em;
+    }
+    ul {
+      margin: 0 0 10px 20px;
+    }
+    li {
+      margin-bottom: 10px;
+    }
+    code {
+      background: #eee;
+      padding: 2px 4px;
+      border-radius: 3px;
+      font-family: Consolas, "Courier New", monospace;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <div class="header">
+      <h1>Yi-Chieh Chen</h1>
+      <div class="contact">
+        Email: <a href="mailto:c0991100247@gmail.com">c0991100247@gmail.com</a>
+      </div>
+    </div>
+
+    <!-- Qualification Summary -->
+    <div class="section">
+      <div class="section-title">Qualification Summary</div>
+      <p>
+        Accomplished communicator with a proven track record of supporting senior leadership in managing an 11 million NTD portfolio and overseeing compliance and accounting functions. Highly skilled in organizing complex events, demonstrating exceptional multitasking, attention to detail, and flexibility in managing priorities. Fast learner with AI literacy, data science expertise and complex algorithmic problem-solving, a diverse cultural background, and strong adaptability to new technologies and methodologies.
+      </p>
+    </div>
+
+    <!-- Work Experience -->
+    <div class="section">
+      <div class="section-title">Work Experience</div>
+
+      <!-- Academia Sinica -->
+      <div class="item">
+        <div class="subheading">
+          <span>Academia Sinica</span>
+          <span class="location">Taipei, Taiwan</span>
+        </div>
+        <div class="details">Executive Secretary | Apr. 2023 -- Present</div>
+        <ul>
+          <li>
+            <strong>Annual Meeting Organization:</strong>
+            Coordinated the 20th Asian Law and Economics Association Annual Conference (150 attendees from 11 countries), serving as the primary communication bridge among stakeholders. Handled funding applications, peer review, registration, scheduling, and budget control. Drafted communications, managed IT logistics, produced the conference booklet, and ensured continuity despite typhoon disruptions. Provided post-event follow-ups and knowledge-transfer documentation.
+          </li>
+          <li>
+            <strong>Grant Application &amp; Administration:</strong>
+            Prepared research grant proposals (budget estimates, interim reports) for a 9 million NTD portfolio. Maintained budgets, managed contractors, and enforced compliance.
+          </li>
+          <li>
+            <strong>Knowledge Sharing &amp; Executive Support:</strong>
+            Represented the institution at Clarivate user group meetings; trained staff on EndNote, Web of Science, HackMD. Advised executive officers on journal submission strategies by distilling intricate requirements into concise briefs; prepared briefings and policy documents. Drafted contracts with experiment vendors, contributed to conflict resolution, and helped shape contractor policies.
+          </li>
+        </ul>
+      </div>
+
+      <!-- Empirical Legal Research Assistant -->
+      <div class="item">
+        <div class="subheading">
+          <span>Empirical Legal Research Assistant</span>
+          <span class="dates">Apr. 2023 -- Present</span>
+        </div>
+        <ul>
+          <li>
+            <strong>Academic Publishing:</strong>
+            Supported the full cycle: editing, table/figure rendering, replication packages, and LaTeX/Word conversions. Ensured 13+ manuscripts met journal/conference guidelines (layout, references).
+          </li>
+          <li>
+            <strong>Patent Bibliographic Dataset:</strong>
+            Constructed large-scale patent databases (N ~5m observations) retrieved from PatentsView, PatEx, EP Bulletin, GPI, PATSTAT; cross-validated data sources (e.g., LexisNexis) and prepared SQL scripts, providing clear, step-by-step documentation that facilitated data integrity checks.
+          </li>
+          <li>
+            <strong>Data Acquisition &amp; Management:</strong>
+            Gathered sensitive data (health &amp; education) and SRDA survey data by liaising with multiple stakeholders, ensuring privacy and compliance; created proxy measures (e.g., examiner seniority) to resolve data limitations, clearly communicating rationale and methodology to research teams.
+          </li>
+          <li>
+            <strong>Economic Experiment Support:</strong>
+            Secured Institutional Review Board &amp; accounting approvals for ~200 lab participants; oversaw project expenses and reimbursements through transparent, well-organized budget documentation; leveraged theoretically guided experimetrics analyses and data visualizations in Stata/MP.
+          </li>
+        </ul>
+      </div>
+
+      <!-- Predoctoral Research Fellow in Economics -->
+      <div class="item">
+        <div class="subheading">
+          <span>Predoctoral Research Fellow in Economics</span>
+          <span class="dates">Oct. 2021 -- Mar. 2023</span>
+        </div>
+        <ul>
+          <li>
+            <strong>Statistical Programming &amp; Numerical Methods:</strong>
+            Improved, tested, and visualized Stata <code>didregress</code> models using N=700K+ observations for empirical legal studies; simplified advanced econometric results into intuitive visualizations and summaries, enabling non-technical stakeholders to grasp key insights.
+          </li>
+          <li>
+            <strong>Bibliography Management:</strong>
+            Maintained 2000+ references with BibTeX, Biber, Natbib, JabRef, EndNote; integrated Clarivate’s Web of Science for streamlined citations; simplified complex referencing processes by providing clear documentation and best practices for team-wide adoption.
+          </li>
+          <li>
+            <strong>Job Market Paper Study Group:</strong>
+            Led weekly sessions analyzing top U.S. economics departments' JMPs; covered advanced causal inference methods and translated complex theoretical frameworks into accessible discussions, fostering collaborative learning and deeper methodological understanding.
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Education -->
+    <div class="section">
+      <div class="section-title">Education</div>
+
+      <div class="item">
+        <div class="subheading">
+          <span>National Yang Ming Chiao Tung University</span>
+          <span class="location">Taipei, Taiwan</span>
+        </div>
+        <div class="details">
+          Master of Business Administration; GPA: 4.30/4.30 (top 1) | Mar. 2020 -- Aug. 2021
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="subheading">
+          <span>National Chengchi University</span>
+          <span class="location">Taipei, Taiwan</span>
+        </div>
+        <div class="details">
+          Bachelor of Arts in Political Science; GPA: 3.72/4.00 (top 34%) | Aug. 2007 -- Jul. 2012
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="subheading">
+          <span>L'Institut d'Études Politiques de Paris (Sciences Po)</span>
+          <span class="location">Paris, France</span>
+        </div>
+        <div class="details">
+          Undergraduate Exchange Program in International Relations; obtained 41 ECTS | Aug. 2010 -- May 2011
+        </div>
+      </div>
+    </div>
+
+    <!-- Languages & Data Science Skills -->
+    <div class="section">
+      <div class="section-title">Languages &amp; Data Science Skills</div>
+      
+      <div class="item">
+        <strong>Languages:</strong>
+        Mandarin (Native), English (Fluent, TOEFL iBT 105), French (Intermediate, DELF B2)
+      </div>
+      <div class="item">
+        <strong>Data Science Skills for ETL:</strong>
+        Transact-SQL, DAX; <strong>for Visualization:</strong> Tableau, Power BI, Gephi; <strong>for Analysis:</strong> Stata, <code>R</code>, <code>Python</code>, <code>Julia</code>, EViews, SPSS; <strong>for Reporting:</strong> LaTeX, Markdown; <strong>for Collaboration:</strong> <code>Git</code>, GitHub.
+      </div>
+    </div>
+  </div>
+</body>
+</html>
