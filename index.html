@@ -51,9 +51,9 @@
       text-transform: uppercase;
       letter-spacing: 0.05em;
     }
-    /* Subheading for entries (Work Experience, Education) */
+    /* Company/Item styling */
     .item {
-      margin-bottom: 20px;
+      margin-bottom: 30px;
     }
     .subheading {
       display: flex;
@@ -67,11 +67,17 @@
       color: #555;
       font-size: 0.9em;
     }
-    .details {
-      margin: 5px 0 10px 0;
+    /* Position styling inside a company */
+    .position {
+      margin-top: 20px;
+      padding-left: 15px;
+      border-left: 2px solid #ddd;
+    }
+    .position .details {
       font-style: italic;
       color: #555;
       font-size: 0.9em;
+      margin-bottom: 5px;
     }
     ul {
       margin: 0 0 10px 20px;
@@ -109,76 +115,75 @@
     <div class="section">
       <div class="section-title">Work Experience</div>
 
-      <!-- Academia Sinica -->
+      <!-- Academia Sinica with multiple positions -->
       <div class="item">
         <div class="subheading">
           <span>Academia Sinica</span>
           <span class="location">Taipei, Taiwan</span>
         </div>
-        <div class="details">Executive Secretary | Apr. 2023 -- Present</div>
-        <ul>
-          <li>
-            <strong>Annual Meeting Organization:</strong>
-            Coordinated the 20th Asian Law and Economics Association Annual Conference (150 attendees from 11 countries), serving as the primary communication bridge among stakeholders. Handled funding applications, peer review, registration, scheduling, and budget control. Drafted communications, managed IT logistics, produced the conference booklet, and ensured continuity despite typhoon disruptions. Provided post-event follow-ups and knowledge-transfer documentation.
-          </li>
-          <li>
-            <strong>Grant Application &amp; Administration:</strong>
-            Prepared research grant proposals (budget estimates, interim reports) for a 9 million NTD portfolio. Maintained budgets, managed contractors, and enforced compliance.
-          </li>
-          <li>
-            <strong>Knowledge Sharing &amp; Executive Support:</strong>
-            Represented the institution at Clarivate user group meetings; trained staff on EndNote, Web of Science, HackMD. Advised executive officers on journal submission strategies by distilling intricate requirements into concise briefs; prepared briefings and policy documents. Drafted contracts with experiment vendors, contributed to conflict resolution, and helped shape contractor policies.
-          </li>
-        </ul>
-      </div>
 
-      <!-- Empirical Legal Research Assistant -->
-      <div class="item">
-        <div class="subheading">
-          <span>Empirical Legal Research Assistant</span>
-          <span class="dates">Apr. 2023 -- Present</span>
+        <!-- Position 1: Executive Secretary -->
+        <div class="position">
+          <div class="details">Executive Secretary | Apr. 2023 – Present</div>
+          <ul>
+            <li>
+              <strong>Annual Meeting Organization:</strong>
+              Coordinated the 20th Asian Law and Economics Association Annual Conference (150 attendees from 11 countries), serving as the primary communication bridge among stakeholders. Handled funding applications, peer review, registration, scheduling, and budget control. Drafted communications, managed IT logistics, produced the conference booklet, and ensured continuity despite typhoon disruptions. Provided post-event follow-ups and knowledge-transfer documentation.
+            </li>
+            <li>
+              <strong>Grant Application &amp; Administration:</strong>
+              Prepared research grant proposals (budget estimates, interim reports) for a 9 million NTD portfolio. Maintained budgets, managed contractors, and enforced compliance.
+            </li>
+            <li>
+              <strong>Knowledge Sharing &amp; Executive Support:</strong>
+              Represented the institution at Clarivate user group meetings; trained staff on EndNote, Web of Science, HackMD. Advised executive officers on journal submission strategies by distilling intricate requirements into concise briefs; prepared briefings and policy documents. Drafted contracts with experiment vendors, contributed to conflict resolution, and helped shape contractor policies.
+            </li>
+          </ul>
         </div>
-        <ul>
-          <li>
-            <strong>Academic Publishing:</strong>
-            Supported the full cycle: editing, table/figure rendering, replication packages, and LaTeX/Word conversions. Ensured 13+ manuscripts met journal/conference guidelines (layout, references).
-          </li>
-          <li>
-            <strong>Patent Bibliographic Dataset:</strong>
-            Constructed large-scale patent databases (N ~5m observations) retrieved from PatentsView, PatEx, EP Bulletin, GPI, PATSTAT; cross-validated data sources (e.g., LexisNexis) and prepared SQL scripts, providing clear, step-by-step documentation that facilitated data integrity checks.
-          </li>
-          <li>
-            <strong>Data Acquisition &amp; Management:</strong>
-            Gathered sensitive data (health &amp; education) and SRDA survey data by liaising with multiple stakeholders, ensuring privacy and compliance; created proxy measures (e.g., examiner seniority) to resolve data limitations, clearly communicating rationale and methodology to research teams.
-          </li>
-          <li>
-            <strong>Economic Experiment Support:</strong>
-            Secured Institutional Review Board &amp; accounting approvals for ~200 lab participants; oversaw project expenses and reimbursements through transparent, well-organized budget documentation; leveraged theoretically guided experimetrics analyses and data visualizations in Stata/MP.
-          </li>
-        </ul>
-      </div>
 
-      <!-- Predoctoral Research Fellow in Economics -->
-      <div class="item">
-        <div class="subheading">
-          <span>Predoctoral Research Fellow in Economics</span>
-          <span class="dates">Oct. 2021 -- Mar. 2023</span>
+        <!-- Position 2: Empirical Legal Research Assistant -->
+        <div class="position">
+          <div class="details">Empirical Legal Research Assistant | Apr. 2023 – Present</div>
+          <ul>
+            <li>
+              <strong>Academic Publishing:</strong>
+              Supported the full cycle: editing, table/figure rendering, replication packages, and LaTeX/Word conversions. Ensured 13+ manuscripts met journal/conference guidelines (layout, references).
+            </li>
+            <li>
+              <strong>Patent Bibliographic Dataset:</strong>
+              Constructed large-scale patent databases (N ~5m observations) retrieved from PatentsView, PatEx, EP Bulletin, GPI, PATSTAT; cross-validated data sources (e.g., LexisNexis) and prepared SQL scripts, providing clear, step-by-step documentation that facilitated data integrity checks.
+            </li>
+            <li>
+              <strong>Data Acquisition &amp; Management:</strong>
+              Gathered sensitive data (health &amp; education) and SRDA survey data by liaising with multiple stakeholders, ensuring privacy and compliance; created proxy measures (e.g., examiner seniority) to resolve data limitations, clearly communicating rationale and methodology to research teams.
+            </li>
+            <li>
+              <strong>Economic Experiment Support:</strong>
+              Secured Institutional Review Board &amp; accounting approvals for ~200 lab participants; oversaw project expenses and reimbursements through transparent, well-organized budget documentation; leveraged theoretically guided experimetrics analyses and data visualizations in Stata/MP.
+            </li>
+          </ul>
         </div>
-        <ul>
-          <li>
-            <strong>Statistical Programming &amp; Numerical Methods:</strong>
-            Improved, tested, and visualized Stata <code>didregress</code> models using N=700K+ observations for empirical legal studies; simplified advanced econometric results into intuitive visualizations and summaries, enabling non-technical stakeholders to grasp key insights.
-          </li>
-          <li>
-            <strong>Bibliography Management:</strong>
-            Maintained 2000+ references with BibTeX, Biber, Natbib, JabRef, EndNote; integrated Clarivate’s Web of Science for streamlined citations; simplified complex referencing processes by providing clear documentation and best practices for team-wide adoption.
-          </li>
-          <li>
-            <strong>Job Market Paper Study Group:</strong>
-            Led weekly sessions analyzing top U.S. economics departments' JMPs; covered advanced causal inference methods and translated complex theoretical frameworks into accessible discussions, fostering collaborative learning and deeper methodological understanding.
-          </li>
-        </ul>
-      </div>
+
+        <!-- Position 3: Predoctoral Research Fellow in Economics -->
+        <div class="position">
+          <div class="details">Predoctoral Research Fellow in Economics | Oct. 2021 – Mar. 2023</div>
+          <ul>
+            <li>
+              <strong>Statistical Programming &amp; Numerical Methods:</strong>
+              Improved, tested, and visualized Stata <code>didregress</code> models using N=700K+ observations for empirical legal studies; simplified advanced econometric results into intuitive visualizations and summaries, enabling non-technical stakeholders to grasp key insights.
+            </li>
+            <li>
+              <strong>Bibliography Management:</strong>
+              Maintained 2000+ references with BibTeX, Biber, Natbib, JabRef, EndNote; integrated Clarivate’s Web of Science for streamlined citations; simplified complex referencing processes by providing clear documentation and best practices for team-wide adoption.
+            </li>
+            <li>
+              <strong>Job Market Paper Study Group:</strong>
+              Led weekly sessions analyzing top U.S. economics departments' JMPs; covered advanced causal inference methods and translated complex theoretical frameworks into accessible discussions, fostering collaborative learning and deeper methodological understanding.
+            </li>
+          </ul>
+        </div>
+
+      </div> <!-- End Academia Sinica item -->
     </div>
 
     <!-- Education -->
@@ -191,7 +196,7 @@
           <span class="location">Taipei, Taiwan</span>
         </div>
         <div class="details">
-          Master of Business Administration; GPA: 4.30/4.30 (top 1) | Mar. 2020 -- Aug. 2021
+          Master of Business Administration; GPA: 4.30/4.30 (top 1) | Mar. 2020 – Aug. 2021
         </div>
       </div>
 
@@ -201,7 +206,7 @@
           <span class="location">Taipei, Taiwan</span>
         </div>
         <div class="details">
-          Bachelor of Arts in Political Science; GPA: 3.72/4.00 (top 34%) | Aug. 2007 -- Jul. 2012
+          Bachelor of Arts in Political Science; GPA: 3.72/4.00 (top 34%) | Aug. 2007 – Jul. 2012
         </div>
       </div>
 
@@ -211,7 +216,7 @@
           <span class="location">Paris, France</span>
         </div>
         <div class="details">
-          Undergraduate Exchange Program in International Relations; obtained 41 ECTS | Aug. 2010 -- May 2011
+          Undergraduate Exchange Program in International Relations; obtained 41 ECTS | Aug. 2010 – May 2011
         </div>
       </div>
     </div>
